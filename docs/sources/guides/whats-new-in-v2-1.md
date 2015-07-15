@@ -6,7 +6,6 @@ page_keywords: grafana, new, changes, features, documentation
 
 #What's new in Grafana v2.1
 
-
 ##More Dynamic Dashboards
 
 The Templating system is one of the most powerful and well-used
@@ -119,12 +118,11 @@ Thank you to < > for their hard work in getting it to this point.
 
 ### Graph Panel
 
-Issue #590. Graph: Define series color using regex rule
+Graph: Define series color using regex rule
 
-Issue #2162. Graph: New series style override, negative-y transform
-and stack groups
+Graph: New series style override, negative-y transform and stack groups
 
 
 ### Singlestat Panel
 
-Issue #2203. Singlestat: Now support string values
+Singlestat: Now support string values
