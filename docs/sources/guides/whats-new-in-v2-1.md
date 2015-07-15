@@ -8,46 +8,36 @@ page_keywords: grafana, new, changes, features, documentation
 
 ##More Dynamic Dashboards
 
-The Templating system is one of the most powerful and well-used
-features of Grafana. The 2.1 release brings numerous improvements that
-make Dashboards more dynamic than ever before.
+The Templating system is one of the most powerful and well-used features of Grafana. The 2.1 release brings numerous improvements that make Dashboards more dynamic than ever before.
 
 
 ### Multi-Value Template Select
 
 Multi-Value Select allows for the selection of multiple template variables.
 
-These variables can be used in any Panel to make them more dynamic,
-and automatically show only the desired data.
+These variables can be used in any Panel to make them more dynamic, and automatically show only the desired data.
 
-Multi-Value Select is also a basis for enabling Repeating Rows and
-Repeating Panels.
+Multi-Value Select is also a basis for enabling Repeating Rows and Repeating Panels.
 
 
 ### Repeating Rows and Panels
 
-It’s now possible to create a Dashboard that automatically adds (and
-removes) both Rows and Panels based on which Template variables you
-have selected.
+It’s now possible to create a Dashboard that automatically adds (and removes) both Rows and Panels based on which Template variables you have selected.
 
 
-Any Row or Any Panel can be configured to repeat (duplicate itself)
-based on the Multi-Value Template variables selected.
+Any Row or Any Panel can be configured to repeat (duplicate itself) based on the Multi-Value Template variables selected.
 
 
 ### Dashboard Links
 
-To support better navigation between Dashboarads, it is possible to
-create custom and dynamic links from individual Panels to appropriate
-Dashboards (1888)
+To support better navigation between Dashboarads, it is possible to create custom and dynamic links from individual Panels to appropriate Dashboards (1888)
 
 
 ### Better local Dashboard support
 
 Grafana can now index Dashboards saved locally as JSON from a given directory.
 
-Note: Saving local dashboards back the folder is not supported; this
-feature is meant for statically generated JSON dashboards.
+Note: Saving local dashboards back the folder is not supported; this feature is meant for statically generated JSON dashboards.
 
 
 ## Improved authentication engine
@@ -56,32 +46,24 @@ feature is meant for statically generated JSON dashboards.
 
 ### Basic Auth support
 
-You can now authenticate against the Grafana API utilizing a simple
-username and password with basic HTTP authentication.
+You can now authenticate against the Grafana API utilizing a simple username and password with basic HTTP authentication.
 
-Note: this can be useful for provisioning and config management
-systems that need to utilize the API without having to create an API
-key.
+Note: this can be useful for provisioning and config management systems that need to utilize the API without having to create an API key.
 
 
 ### User authentication utilizing headers
 
-You can now authenticate utilizing a header (eg. X-Authenticated-User,
-or X-WEBAUTH-USER)
+You can now authenticate utilizing a header (eg. X-Authenticated-User, or X-WEBAUTH-USER)
 
 Note: this can be useful in situations with reverse proxies.
 
 
 ### New “Read-only Editor” User Role
 
-There is a new User role available in this version of Grafana:
-“Read-only Editor”. This role disables the query editor for the user
-and puts him in a read-only sandbox of sorts.
+There is a new User role available in this version of Grafana: “Read-only Editor”. This role disables the query editor for the user and puts him in a read-only sandbox of sorts.
 
 
-Note: Even with this role assigned, Read-only Editors still have
-access to ALL metrics from that Datasource. This is not a way to
-achieve a true multitenant segregated environment with Grafana.
+Note: Even with this role assigned, Read-only Editors still have access to ALL metrics from that Datasource. This is not a way to achieve a true multitenant segregated environment with Grafana.
 
 
 ##Improved data source support
@@ -89,9 +71,7 @@ achieve a true multitenant segregated environment with Grafana.
 
 ### Improved Data Sources
 
-We continue to make progress on fully supporting InfluxDB 0.9, but it
-has proven to be a bit of a moving target. This Grafana release brings
-a much improved query editor for InfluxDB 0.9
+We continue to make progress on fully supporting InfluxDB 0.9, but it has proven to be a bit of a moving target. This Grafana release brings a much improved query editor for InfluxDB 0.9
 
 
 (screenshot)
@@ -99,18 +79,15 @@ a much improved query editor for InfluxDB 0.9
 
 ### OpenTSDB Data Source improvements
 
-Grafana now supports template variable values lookup queries, as well
-as limiting tags by metric
+Grafana now supports template variable values lookup queries, as well as limiting tags by metric
 
 
-(Note: OpenTSDB config option tsd.core.meta.enable_realtime_ts must
-enabled for OpenTSDB lookup api)
+(Note: OpenTSDB config option tsd.core.meta.enable_realtime_ts must enabled for OpenTSDB lookup api)
 
 
 ### New Data Source: KairosDB
 
-Experimental support for the KairosDB is now shipping in Grafana.
-Thank you to < > for their hard work in getting it to this point.
+Experimental support for the KairosDB is now shipping in Grafana. Thank you to < > for their hard work in getting it to this point.
 
 
 ## Panel Improvements
@@ -118,9 +95,9 @@ Thank you to < > for their hard work in getting it to this point.
 
 ### Graph Panel
 
-Graph: Define series color using regex rule
+**Graph: Define series color using regex rule**
 
-Graph: New series style override, negative-y transform and stack groups
+**Graph: New series style override, negative-y transform and stack groups**
 
 
 ### Singlestat Panel
