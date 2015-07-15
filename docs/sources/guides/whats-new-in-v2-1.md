@@ -40,6 +40,7 @@ Grafana can now index Dashboards saved locally as JSON from a given directory.
 Note: Saving local dashboards back the folder is not supported; this feature is meant for statically generated JSON dashboards.
 
 
+
 ## Improved authentication engine
 
 ### LDAP support
@@ -66,8 +67,8 @@ There is a new User role available in this version of Grafana: “Read-only Edit
 Note: Even with this role assigned, Read-only Editors still have access to ALL metrics from that Datasource. This is not a way to achieve a true multitenant segregated environment with Grafana.
 
 
-##Improved data source support
 
+##Improved data source support
 
 ### Improved Data Sources
 
@@ -90,8 +91,8 @@ Grafana now supports template variable values lookup queries, as well as limitin
 Experimental support for the KairosDB is now shipping in Grafana. Thank you to < > for their hard work in getting it to this point.
 
 
-## Panel Improvements
 
+## Panel Improvements
 
 ### Graph Panel
 
