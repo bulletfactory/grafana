@@ -11,18 +11,21 @@ The Templating system is one of the most powerful and well-used features of Graf
 
 
 ### Multi-Value Template Select
+![Multi-Value Select](/img/v1/multi-select.gif "Multi-Value Select")
 Multi-Value Select allows for the selection of multiple template variables.
 These variables can be used in any Panel to make them more dynamic, and automatically show only the desired data.
 Multi-Value Select is also a basis for enabling Repeating Rows and Repeating Panels.
 
 
 ### Repeating Rows and Panels
+![Repeating Rows and Panels](/img/v1/panel-row-repeat.gif "Repeating Rows and Panels")
 It’s now possible to create a Dashboard that automatically adds (and removes) both Rows and Panels based on which Template variables you have selected.
 
 Any Row or Any Panel can be configured to repeat (duplicate itself) based on the Multi-Value Template variables selected.
 
 
 ### Dashboard Links
+![Dashboard Links](/img/v1/panel-link.png "Dashboard Links")
 To support better navigation between Dashboarads, it is possible to create custom and dynamic links from individual Panels to appropriate Dashboards (1888)
 
 
@@ -39,7 +42,7 @@ Grafana can now index Dashboards saved locally as JSON from a given directory.
 ### Basic Auth support
 You can now authenticate against the Grafana API utilizing a simple username and password with basic HTTP authentication.
 
-Note: this can be useful for provisioning and config management systems that need to utilize the API without having to create an API key.
+> ***Note:*** This can be useful for provisioning and config management systems that need to utilize the API without having to create an API key.
 
 
 ### User authentication utilizing headers
@@ -54,13 +57,11 @@ There is a new User role available in this version of Grafana: “Read-only Edit
 > ***Note:*** Even with this role assigned, Read-only Editors still have access to ALL metrics from that Datasource. This is not a way to achieve a true multitenant segregated environment with Grafana.
 
 
-
 ##Improved data source support
 
 ### Improved Data Sources
+![InfluxDB Support](/img/v1/Influx-query.gif "InfluxDB Support")
 We continue to make progress on fully supporting InfluxDB 0.9, but it has proven to be a bit of a moving target. This Grafana release brings a much improved query editor for InfluxDB 0.9
-
-(screenshot)
 
 
 ### OpenTSDB Data Source improvements
