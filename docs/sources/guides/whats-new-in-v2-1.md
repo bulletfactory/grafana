@@ -84,4 +84,4 @@ Experimental support for the KairosDB is now shipping in Grafana. Thank you to <
 
 
 ### Singlestat Panel
-Now support string values
+Now support string values - read much more about [Singlestat Panels] (../reference/singlestat.md)
